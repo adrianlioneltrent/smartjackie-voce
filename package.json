@@ -1,0 +1,6 @@
+{
+  "name": "smartjackie-voice-service",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.mjs" }
+}

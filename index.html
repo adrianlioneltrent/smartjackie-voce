@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voce AI</title>
+<style>
+body { margin: 0; padding: 24px; background: #121822; color: #f3f6fb; font: 18px system-ui, sans-serif; }
+[hidden] { display: none !important; }
+main { max-width: 420px; margin: auto; }
+label, input, button { display: block; width: 100%; box-sizing: border-box; }
+input, button { font: inherit; min-height: 50px; margin: 10px 0; border-radius: 10px; padding: 10px; }
+button { color: #111b27; background: #a8d7ff; border: 0; font-weight: 650; }
+</style>
+<script src="/voice.js" defer></script>
+</head>
+<body>
+<main>
+  <p id="status" role="status">Introdu codul de acces al serviciului AI.</p>
+  <form id="connect">
+    <label for="code">Cod de acces</label>
+    <input id="code" type="password" autocomplete="current-password" required>
+    <button type="submit">Pornește microfonul</button>
+  </form>
+  <button id="stop" hidden>Oprește microfonul</button>
+  <audio id="audio" autoplay></audio>
+</main>
+</body>
+</html>
+
